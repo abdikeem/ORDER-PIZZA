@@ -8,9 +8,13 @@ img{
     border-radius: 10px;
 }
 .home{
-    background-image: url("../img/crazy\ piza.png");
-    width: 1677px;
+    background-image: url("../img/wow.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    border-radius: 10px;
+    width: 1683px;
     height:760px;
+    
 }
 #article{
     font-size: 30px;
