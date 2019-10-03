@@ -1,0 +1,30 @@
+
+a:hover, a:active{
+    background-color: black;
+}
+img{
+    margin-left:40px;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+.home{
+    background-image: url("../img/crazy\ piza.png");
+    width: 1677px;
+    height:760px;
+}
+#article{
+    font-size: 30px;
+    text-align: center;
+    margin-top: 150px;
+}
+
+.container{
+    background-color: gray;
+       font-size: 25px;
+       padding:10px;
+       margin-top:10px;  
+}
+li{
+    display: inline-table;
+    padding-left: 145px
+}
