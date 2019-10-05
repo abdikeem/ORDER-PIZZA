@@ -3,35 +3,32 @@ a:hover, a:active{
     background-color: black;
 }
 img{
-    margin-left:40px;
-    margin-top: 50px;
+    margin-left:5px;
+    margin-top: 10px;
     border-radius: 10px;
 }
-.home{
-    background-image: url("../img/wow.jpg");
+.container-fluid{
+    background-image: url("../img/amazing.jpeg");
     background-repeat: no-repeat;
     background-size:cover;
     border-radius: 10px;
     width: 1683px;
-    height:760px;
+    height:850px;
+    
     
 }
-#article{
-    font-size: 30px;
+#intro{
+    font-size: 35px;
     text-align: center;
-    margin-top: 150px;
-    color:greenyellow;
+    margin-top: 110px;
+    color:rgb(22, 69, 172);
 }
 
-.container{
-    background-color: gray;
-       font-size: 25px;
-       padding:10px;
-       margin-top:10px;  
-}
 li{
     display: inline-table;
-    padding-left: 145px
+    padding: 15px;
+    font-size:25px;
+    margin-left: 200px;
 }
 * {
     box-sizing: border-box;
@@ -39,28 +36,34 @@ li{
   }
   
   header {
-    background-color: #666;
-    padding: 30px;
+    background-color:rgb(7, 7, 90);
     text-align: center;
-    font-size: 35px;
+    font-size: 45px;
     color: white;
+    height: 50px;
     width: 1683px;
+    margin-right:-20px;
   }
   
   article {
-    float: left;
+    background-image: url("../img/plain\ back.jpeg");
     padding: 20px;
     width: 1683px;
-    background-color: #f1f1f1;
-    height: 700px;
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 1050px;
   }
   
   footer {
-    background-color:greenyellow;
+    background-color:rgb(26, 170, 26);
     padding: 10px;
     text-align: center;
-    color: white;
+    color:goldenrod;
     width: 1683px;
+    margin-right: -20px;
+    font-size: 25px;
   }
-  
 
+  h2{
+    margin-left: 100px;
+  }
