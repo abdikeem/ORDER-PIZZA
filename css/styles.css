@@ -77,6 +77,13 @@ img{
  b{
   color: brown;
  }
+ 
+ .container{
+   background-image: url("../img/whiteback.jpg");
+   background-size: cover;
+   height:830px;
+
+ }
 
 @media only screen and (max-width:800px) {
   /* For tablets: */
@@ -93,4 +100,3 @@ img{
   .menu, .main, .right {
     width: 100%;
   }
-  

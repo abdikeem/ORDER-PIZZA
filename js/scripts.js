@@ -37,12 +37,22 @@ $(document).ready(function(){
             '<option label="Pepperoni Large  -  1500" value="1500"></option>'+
             '<option label="Pepperoni Medium  -  1100" value="1100"></option>'+
             '<option label="Pepperoni Small  -  850" value="850"></option>'+
-            ',option label="Pepperoni sliced -  350" value="350"></option>'+
+            '<option label="Pepperoni sliced -  350" value="350"></option>'+
 
             '<option label="Zuchni Large  -  1200" value="1200"></option>'+
             '<option label="Zuchni Medium  -  900" value="900"></option>'+
             '<option label="Zuchni Small  -  600" value="600"></option>'+
-            ',option label="Zuchni sliced -  200" value="200"></option>'+
+            '<option label="Zuchni sliced -  200" value="200"></option>'+
+
+            '<option label="Chicken Pesto Large  -  1300" value="1300"></option>'+
+            '<option label="Chicken Pesto Medium  -  1000" value="1000"></option>'+
+            '<option label="Chicken Pesto Small  -  750" value="750"></option>'+
+            '<option label="Chicken Pesto sliced -  400" value="400"></option>'+
+
+            '<option label="Wheat Large  -  1100" value="1100"></option>'+
+            '<option label="Wheat Medium  -  945" value="945"></option>'+
+            '<option label="Wheat Small  -  550" value="550"></option>'+
+            '<option label="Wheat sliced -  200" value="200"></option>'+
         '</select>'+
     '</form>'+
 '</div>'+
@@ -92,7 +102,7 @@ $(document).ready(function(){
     pTopping2.push($(this).val());
     });
 
-    var pizzaTopping2 = pTopping2.length*100;
+    var pizzaTopping2 = pizzaTopping2.length*100;
     var pizzaTotal2 = parseInt(pizzaSize2) + parseInt(pizzaCrust2)+ parseInt(pizzaTopping2);
     
     alert("Your total order is: "+pizzaTotal2)//displays grandtotal for order added
@@ -107,21 +117,23 @@ $(document).ready(function(){
 //displays an alert for delivery location in accordance to input
 $(document).ready(function(){
     $('form#place').submit(function(){
-        var building = $('input#building').val();
-        var office = $('input#office').val();
-        if ($('input#building').val() && $('input#office').val() !== ""){
-            alert("Your pizza will be delivered at "+building+" in house number "+office+" .");
+        var name = $('input#name').val();
+        var location = $('input#location').val();
+        var house= $('input#house').val();
+        var phone= $('input#phone').val();
+        if ($('input#name').val() && $('input#location').val() && $('input#house').val() && $('input#phone').val() !== ""){
+            alert(" "+name+" your order will be delivered at "+location+" house number "+house+" .");
         } else {
-            alert("please enter your location");
+            alert("please enter your details");
         };
     });
 })
 function myFunction() {
     var del;
-    if (confirm("Delivery Fee =Ksh 200")) {
+    if (confirm("Delivery Fee = Ksh 200")) {
       txt = "You pressed OK!";
     } else {
       txt = "You pressed Cancel!";
     }
-      document.getElementById("order received").innerHTML = del;
+      document.getElementById("order received").innerHTML = order received;
       }
