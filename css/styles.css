@@ -98,7 +98,10 @@ img{
    font-family:cursive;
    font-size: 25px;
  }
-
+ 
+ #more {
+   display: none;
+ }
  
 
 @media only screen and (max-width:800px) {
