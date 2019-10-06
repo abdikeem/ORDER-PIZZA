@@ -12,10 +12,11 @@
     <div class="container-fluid">
            <nav> 
               <ul>
-                <li><a href="#home"><strong>HOME</strong></a></li>
-                <li><a href="#menu"><strong>MENU</strong></a></li>
-                <li><a href="#order"><strong>ORDER</strong></a></li>
+                  <li><a href="#home"><strong>HOME</strong></a></li>
+                  <li><a href="#menu"><strong>MENU</strong></a></li>
+                  <li><a href="#order"><strong>ORDER</strong></a></li>
                 <li><a href="#payment"><strong>PAYMENT</strong></a></li>
+                <li><a href="#About us"><strong>ABOUT US</strong></a></li><li><a href="#services"><strong>SERVICES</strong></a></li>
               </ul>
            </nav> 
     
@@ -25,6 +26,7 @@
           </div>
     </div><br><br>
       
+    <div id="menu">
     <header>
         <h1><strong>DELIVERY  &  TAKE - OUT  MENU</strong></h1>
     </header>       
@@ -53,50 +55,81 @@
         <p><em><b>THANK YOU!</b><br><b>WELCOME AGAIN</b></em></p>
     </footer><br><br>
      
-    <div id="order">
-        <h1><strong>ORDER</strong></h1>
-            <table><b>
-                    <tr>
-                      <th>NAME</th>
-                      <th>Large</th>
-                      <th>Medium</th>
-                      <th>Small</th>
-                    </tr>
-                    <tr>
-                      <td>Berry pizza</td>
-                      <td>1800/-</td>
-                      <td>1300/-</td>
-                      <td>900/-</td>
-                    </tr>
-                    <tr>
-                      <td>Wheat pizza</td>
-                      <td>1600/-</td>
-                      <td>1250/-</td>
-                      <td>100o/-</td>
-                    </tr>
-                    <tr>
-                      <td>Chicken pesto</td>
-                      <td>1950/-</td>
-                      <td>1450/-</td>
-                      <td>1100/-</td>
-                    </tr>
-                    <tr>
-                      <td>Zuchni pizza</td>
-                      <td>2000/-</td>
-                      <td>1600/-</td>
-                      <td>1250/-</td>
-                    </tr>
-                    <tr>
-                      <td>Oliver Mashroom</td>
-                      <td>2200/-</td>
-                      <td>1700/-</td>
-                      <td>1450/-</td>
-                    </tr>
-        
-                  </table>
-    </div>
-   
 
+    <div class="container">
+        <div id="orders">
+              <h2><b>ORDER</b></h2>
+            <div class="row">
+         <div class="col-md-4">
+            <h4>Order your pizza of choice!</h4>
+            <form id="form" class="size">
+                <select class="form-control">
+                    <option label="Pepperoni Large  -  1500" value="1500"></option>
+                    <option label="Pepperoni Medium  - 1100" value="1100"></option>
+                    <option label="Pepperoni Small  -  850" value="850"></option>
+                    <option label="Pepperoni sliced -  350" value="350"></option>
+
+                    <option label="Zuchni Large  -  1200" value="1200"></option>
+                    <option label="Zuchni Medium  - 900" value="900"></option>
+                    <option label="Zuchni Small  -  600" value="600"></option>
+                    <option label="Zuchni sliced -  200" value="200"></option>
+                </select>
+            </form>
+         </div>
+         <div class="col-md-4">
+            <h4>Select pizza crust!</h4>
+            <form id="form" class="crust">
+                <select name="Crust" class="form-control">
+                    <option label="Crispy  -  100" value="100"></option>
+                    <option label="Stuffed  -  200" value="200"></option>
+                    <option label="Glutten-free  - 300" value="300"></option>
+                    <option label="chilli -250" value="250"></option>
+                    <option label="Greens -150" value="150"></option>
+                </select>
+         
+            </form>
+        </div>
+        </div>
+        
+        <div class="col-md-4">
+            <h4>Select Toppings of choice!</h4>
+            <form id="form" class="topping">
+                <div class="row">
+                    <div class="col-md-6">
+                       <input type="checkbox" name="toppings" class="form control" label="Pepperoni" value="100">Pepperoni<br>
+                       <input type="checkbox" name="toppings" class="form control" label="Onions" value="100">Onions<br>
+                       <input type="checkbox" name="toppings" class="form control" label="Sausage" value="100">Sausage<br>
+                       <input type="checkbox" name="toppings" class="form control" label="Bacon" value="100">Bacon<br>
+                    </div>
+                <div class="col-md-6">
+                     <input type="checkbox" name="toppings" class="form control" label="Cheese" value="100">Cheese<br>
+                     <input type="checkbox" name="toppings" class="form control" label="Bell-Pepper" value="100">Bell-Pepper<br>
+                     <input type="checkbox" name="toppings" class="form control" label="Mushrooms" value="100">Mushrooms<br>
+                     <input type="checkbox" name="toppings" class="form control" label="Olive" value="100">Olive<br>
+                </div>
+                </div>
+        <button type="submit" class="btn btn-secondary" id="order">Order</button>
+            </form>
+        </div><br><br>
+        <button class="btn btn-secondary" id="order2">Another Pizza?</button><br><br>
+            <div id="placeOrder2"></div>
+            <button type="submit" class="btn btn-secondary" id="secondOrder">Order</button>
+        
+            </div><br><br>
+ 
+            <div class="location"><br>
+              <p id="p">Please enter your delivery location.</p>
+              <form id="place">
+                <label>Location</label><br>
+                <input type="text" class="form-control" id="building">
+                <label>Home/Office number</label><br>
+                <input type="number" class="form-control" id="office"><br>
+                <button onclick="myFunction()">Delivery!</button>
+              </form>
+            </div><br>
+    </div>
+        <script src="./js/jquery-3.4.1.js"></script>
+        <script src="./js/scripts.js"></script>
 
 </body>
 </html>

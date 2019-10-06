@@ -26,9 +26,9 @@ img{
 
   li{
     display: inline-table;
-    padding: 15px;
+    padding: 10px;
     font-size:25px;
-    margin-left: 200px;
+    margin-left: 100px;
   }
 * {
     box-sizing: border-box;
@@ -66,28 +66,14 @@ img{
 
   h2{
     margin-left: 100px;
+    text-align: center;
   }
   
   table {
     border-collapse: collapse;
     width: 100%;
   }
-  
-  th, td {
-    padding: 10px;
-    text-align: left;
-    border-bottom: 3px solid rgb(35, 74, 184);
-  }
-  h1{
-    text-align: center;
-  }
-  table{
-    font-size: 30px;
-  }
-  #order{
-    background-image: url("../img/berry\ crust.jpeg");
-    color: azure;
-  }
+
  b{
   color: brown;
  }
@@ -107,3 +93,4 @@ img{
   .menu, .main, .right {
     width: 100%;
   }
+  
