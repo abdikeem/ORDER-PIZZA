@@ -135,5 +135,5 @@ function myFunction() {
     } else {
       txt = "You pressed Cancel!";
     }
-      document.getElementById("order received").innerHTML = order received;
+      document.getElementById("order received").innerHTML = del;
       }
