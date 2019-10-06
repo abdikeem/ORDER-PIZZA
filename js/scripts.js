@@ -6,8 +6,6 @@ function Pizza(size, crust, toppings, total) {
     this.total = total;
 }
 
-//displays total order for pizza selected
-//also displays the delivery option
 $(document).ready(function(){
     $('button#order').click(function(){
         var pizzaSize = $('.size option:selected').val();
@@ -20,18 +18,17 @@ $(document).ready(function(){
         });
         var pizzaTopping = pTopping.length*100;
         var pizzaTotal = parseInt(pizzaSize) + parseInt(pizzaCrust)+ parseInt(pizzaTopping);
-        alert("Your total order is: "+pizzaTotal)//displays total for order added
+        alert("Your total order is: "+pizzaTotal)
         $('.delivery').show();
         event.preventDefault();
     });
 });
 
-//shows second order
 $(document).ready(function(){
      $('#order2').click(function(){
          $('#placeOrder2').append('<div class="row">'+
         '<div class="col-md-4">'+
-    '<h4>Order your pizza of choice!</h4>'+
+    '<h4><b>Order your pizza of choice!</b></h4>'+
     '<form id="form" class="size2">'+
         '<select class="form-control">'+
             '<option label="Pepperoni Large  -  1500" value="1500"></option>'+
@@ -49,10 +46,14 @@ $(document).ready(function(){
             '<option label="Chicken Pesto Small  -  750" value="750"></option>'+
             '<option label="Chicken Pesto sliced -  400" value="400"></option>'+
 
-            '<option label="Wheat Large  -  1100" value="1100"></option>'+
-            '<option label="Wheat Medium  -  945" value="945"></option>'+
-            '<option label="Wheat Small  -  550" value="550"></option>'+
-            '<option label="Wheat sliced -  200" value="200"></option>'+
+            '<option label="Bella Napoli Large  -  1100" value="1100"></option>'+
+            '<option label="Bella Napoli Medium  -  945" value="945"></option>'+
+            '<option label="Bella Napoli Small  -  550" value="550"></option>'+
+            '<option label="Bella Napoli sliced -  200" value="200"></option>'+
+
+            '<option label="margerita sliced -  200" value="200"></option>'+
+            '<option label="margerita sliced -  200" value="200"></option>'+
+            '<option label="margerita sliced -  200" value="200"></option>'+
         '</select>'+
     '</form>'+
 '</div>'+
@@ -60,11 +61,25 @@ $(document).ready(function(){
     '<h4>Select pizza crust!</h4>'+
     '<form id="form" class="crust2">'+
         '<select name="Crust" class="form-control">'+
-            '<option label="Crispy  -  100" value="100"></option>'+
-            '<option label="Stuffed  -  200" value="200"></option>'+
-            '<option label="Glutten-free  -  300" value="300"></option>'+
-            '<option label="Chilli  -  250" value="250"></option>'+
-            '<option label="Greens  -  150" value="150"></option>'+
+            '<option label="Crispy large -  250" value="250"></option>'+
+            '<option label="Crispy medium -  150" value="150"></option>'+
+            '<option label="Crispy  small -  100" value="100"></option>'+
+
+            '<option label="chicago pizza large  -  180" value="180"></option>'+
+            '<option label="chicago pizza medium  -  150" value="150"></option>'+
+            '<option label="chicago pizza small  -  120" value="120"></option>'+
+
+            '<option label="Glutten-free large -  300" value="300"></option>'+
+            '<option label="Glutten-free medium -  300" value="300"></option>'+
+            '<option label="Glutten-free small -  300" value="300"></option>'+
+
+            '<option label="pizza bagels large  -  250" value="250"></option>'+
+            '<option label="pizza bagels medium  -  150" value="150"></option>'+
+            '<option label="pizza bagels small  -  100" value="100"></option>'+
+
+            '<option label="sicilian style large   -  250" value="250"></option>'+
+            '<option label="sicilian style medium  -  150" value="150"></option>'+
+            '<option label="sicilian style small  -  100" value="100"></option>'+
         '</select>'+
     '</div>'+
     '</form>'+
@@ -105,7 +120,7 @@ $(document).ready(function(){
     var pizzaTopping2 = pizzaTopping2.length*100;
     var pizzaTotal2 = parseInt(pizzaSize2) + parseInt(pizzaCrust2)+ parseInt(pizzaTopping2);
     
-    alert("Your total order is: "+pizzaTotal2)//displays grandtotal for order added
+    alert("Your total order is: "+pizzaTotal2)
     
     });
     event.preventDefault();
@@ -114,7 +129,6 @@ $(document).ready(function(){
 });
 });
 
-//displays an alert for delivery location in accordance to input
 $(document).ready(function(){
     $('form#place').submit(function(){
         var name = $('input#name').val();

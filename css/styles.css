@@ -27,7 +27,7 @@ img{
 
   li{
     display: inline-table;
-    padding: 10px;
+    padding: 15px;
     font-size:25px;
     margin-left: 100px;
   }
@@ -82,7 +82,7 @@ img{
  .container{
    background-image: url("../img/whiteback.jpg");
    background-size: cover;
-   height:830px;
+   height:850px;
 
  }
  dl{
@@ -93,6 +93,13 @@ img{
  h1{
   font-family: cursive;
  }
+ 
+ p{
+   font-family:cursive;
+   font-size: 25px;
+ }
+
+ 
 
 @media only screen and (max-width:800px) {
   /* For tablets: */
