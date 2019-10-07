@@ -13,7 +13,7 @@ git clone https://github.com/abdikeem/week-4-.git
 
 2.By use of terminal navigate to the cloned project.
 
-cd delani-studio
+cd Pizza 
 
 3.use your text editor to open the project.
 
