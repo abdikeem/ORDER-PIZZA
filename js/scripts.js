@@ -61,6 +61,8 @@ $(document).ready(function(){
     '<h4>Select pizza crust!</h4>'+
     '<form id="form" class="crust2">'+
         '<select name="Crust" class="form-control">'+
+            '<option label="none" value="0"></option>'+
+
             '<option label="Crispy large -  250" value="250"></option>'+
             '<option label="Crispy medium -  150" value="150"></option>'+
             '<option label="Crispy  small -  100" value="100"></option>'+
@@ -136,12 +138,13 @@ $(document).ready(function(){
         var house= $('input#house').val();
         var phone= $('input#phone').val();
         if ($('input#name').val() && $('input#location').val() && $('input#house').val() && $('input#phone').val() !== ""){
-            alert(" "+name+" your order will be delivered at "+location+" house number "+house+" .");
+            alert(" "+name+" your order will be delivered at "+location+" house number "+house+" owner of "+ phone+" .");
         } else {
             alert("please enter your details");
         };
     });
 })
+
 function myFunction() {
     var del;
     if (confirm("Delivery Fee = Ksh 200")) {
@@ -151,19 +154,5 @@ function myFunction() {
     }
       document.getElementById("order received").innerHTML = del;
       }
-
-      function myFunction() {
-        var dots = document.getElementById("dots");
-        var moreText = document.getElementById("more");
-        var btnText = document.getElementById("myBtn");
       
-        if (dots.style.display === "none") {
-          dots.style.display = "inline";
-          btnText.innerHTML = "Read more"; 
-          moreText.style.display = "none";
-        } else {
-          dots.style.display = "none";
-          btnText.innerHTML = "Read less"; 
-          moreText.style.display = "inline";
-        }
-      }
+     
